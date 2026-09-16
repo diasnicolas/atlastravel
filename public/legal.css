@@ -1,0 +1,29 @@
+/* Páginas legais (Política de Privacidade e Termos de Uso) — identidade Atlas */
+:root {
+  --primary: #0E432C;
+  --secondary: #328764;
+  --accent: #C1F107;
+  --dark: #292929;
+  --light: #EDEDED;
+  --text: #3d4a44;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.75; color: var(--text); background: #fff; }
+a { color: var(--secondary); }
+.legal-wrap { width: min(100% - 32px, 820px); margin-inline: auto; }
+.legal-top { background: var(--primary); border-bottom: 4px solid var(--accent); }
+.legal-top .legal-wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; }
+.legal-top img { display: block; height: 44px; width: auto; }
+.legal-back { color: #fff; font-size: .9rem; font-weight: 600; text-decoration: none; }
+.legal-back:hover { color: var(--accent); }
+.legal-doc { padding-block: 48px 64px; }
+.legal-doc h1 { margin: 0 0 4px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; color: var(--primary); }
+.legal-doc h2 { margin: 36px 0 10px; font-size: 1.15rem; color: var(--primary); }
+.legal-doc ul { padding-left: 1.2em; }
+.legal-doc li + li { margin-top: 6px; }
+.legal-meta { margin-top: 0; font-size: .9rem; color: #6b7a72; }
+.legal-contact { margin-top: 40px; padding: 18px 20px; border-left: 4px solid var(--accent); border-radius: 10px; background: #f3f6f4; }
+.legal-foot { background: var(--dark); color: rgba(255, 255, 255, .75); font-size: .85rem; }
+.legal-foot .legal-wrap { padding-block: 22px; }
+.legal-foot p { margin: 4px 0; }
+.legal-foot a { color: #fff; }

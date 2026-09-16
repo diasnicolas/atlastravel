@@ -1,0 +1,678 @@
+{
+  "agencia": {
+    "nome": "Atlas Travel Brasil",
+    "nome_curto": "Atlas",
+    "slogan": "Aventure-se com quem conhece o terreno.",
+    "descricao_curta": "Agência de turismo com atendimento 100% digital e personalizado para viagens nacionais e internacionais — especialmente para quem quer tirar do papel a primeira viagem para fora do país.",
+    "ano_fundacao": 2026,
+    "cnpj": "61.306.322/0001-58",
+    "cadastur": "61.306.322/0001-58",
+    "logotipo": {
+      "principal": "brand/atlas-logo-horizontal.svg",
+      "branco": "brand/atlas-logo-horizontal-branco.svg",
+      "icone": "brand/atlas-simbolo.svg",
+      "favicon": "brand/atlas-favicon.svg",
+      "alt": "Logotipo Atlas Travel Brasil"
+    },
+    "identidade_visual": {
+      "cor_primaria": "#0E432C",
+      "cor_secundaria": "#328764",
+      "cor_destaque": "#C1F107",
+      "cor_escura": "#292929",
+      "cor_clara": "#EDEDED",
+      "fonte_titulos": "Poppins",
+      "fonte_textos": "Poppins"
+    }
+  },
+  "seo": {
+    "titulo": "Atlas Travel Brasil | Sua primeira viagem internacional começa aqui",
+    "descricao": "Agência de turismo com atendimento 100% digital e personalizado. Passagens, hospedagens, pacotes, seguro viagem, cruzeiros e roteiros para viagens nacionais e internacionais.",
+    "palavras_chave": [
+      "agência de viagens",
+      "primeira viagem internacional",
+      "pacotes de viagem",
+      "passagens aéreas",
+      "seguro viagem",
+      "cruzeiros",
+      "roteiros personalizados",
+      "agência de turismo Belo Horizonte",
+      "Atlas Travel Brasil"
+    ],
+    "imagem_compartilhamento": "img/og-atlas-travel.jpg"
+  },
+  "menu": [
+    {
+      "rotulo": "Início",
+      "ancora": "#hero"
+    },
+    {
+      "rotulo": "Sobre",
+      "ancora": "#sobre"
+    },
+    {
+      "rotulo": "Serviços",
+      "ancora": "#servicos"
+    },
+    {
+      "rotulo": "Destinos",
+      "ancora": "#galeria"
+    },
+    {
+      "rotulo": "Dúvidas",
+      "ancora": "#faq"
+    },
+    {
+      "rotulo": "Contato",
+      "ancora": "#contato"
+    }
+  ],
+  "hero": {
+    "etiqueta": "Atendimento próximo e personalizado",
+    "titulo": "Sua primeira viagem internacional",
+    "titulo_destaque": "começa com uma boa conversa",
+    "subtitulo": "Conhecer Paris, caminhar por Roma, ver a neve em Ushuaia ou aproveitar o Caribe: cada pessoa tem um sonho de viagem. A Atlas ajuda você a transformar esse desejo em um plano, com atendimento personalizado e orientação em cada etapa.",
+    "imagem_fundo": "img/destinos/paris.webp",
+    "video_fundo": null,
+    "overlay_opacidade": 0.55,
+    "cta_primario": {
+      "texto": "Falar com a Atlas",
+      "link": "https://wa.me/5531997793511?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20planejar%20minha%20viagem.",
+      "icone": "fa-brands fa-whatsapp"
+    },
+    "cta_secundario": {
+      "texto": "Ver serviços",
+      "link": "#servicos",
+      "icone": "fa-solid fa-arrow-down"
+    },
+    "slides": [
+      {
+        "titulo": "Conhecer Paris",
+        "subtitulo": "A Torre Eiffel pode ser o primeiro capítulo da sua história como viajante",
+        "imagem": "img/destinos/paris.webp"
+      },
+      {
+        "titulo": "Caminhar por Roma",
+        "subtitulo": "História a cada esquina, com um roteiro pensado para o seu ritmo",
+        "imagem": "img/destinos/roma.webp"
+      },
+      {
+        "titulo": "Ver a neve em Ushuaia",
+        "subtitulo": "A cidade do fim do mundo, na Patagônia argentina",
+        "imagem": "img/destinos/ushuaia.webp"
+      },
+      {
+        "titulo": "Aproveitar o Caribe",
+        "subtitulo": "Punta Cana, Cancún e outras praias de água cristalina",
+        "imagem": "img/destinos/punta-cana.webp"
+      },
+      {
+        "titulo": "Buenos Aires e Santiago",
+        "subtitulo": "Destinos internacionais pertinho do Brasil para a primeira viagem",
+        "imagem": "img/destinos/buenos-aires.webp"
+      }
+    ],
+    "busca": {
+      "ativo": false
+    }
+  },
+  "sobre": {
+    "etiqueta": "Quem somos",
+    "titulo": "Ajudamos você a tirar a viagem dos sonhos do papel",
+    "subtitulo": "Mais do que uma vitrine de preços: um guia para cada etapa da sua viagem.",
+    "paragrafos": [
+      "Viajar não é apenas mover-se de um ponto a outro. É expandir territórios, quebrar rotinas e colecionar o novo. Mas a verdadeira liberdade exige preparo — e, para muita gente, o maior desafio é dar o primeiro passo.",
+      "A Atlas Travel Brasil nasce da paixão de quem vive a estrada. Com atendimento 100% digital e direto, ajudamos você a entender as opções de destino, organizar o planejamento e escolher os serviços de acordo com as suas preferências e o seu orçamento.",
+      "Atendemos viagens nacionais e internacionais, de quem vai pela primeira vez a quem já coleciona carimbos no passaporte."
+    ],
+    "imagem_principal": "img/site/sobre-ushuaia.webp",
+    "imagem_secundaria": "img/site/planejamento.webp",
+    "selo_experiencia": {
+      "valor": "103",
+      "rotulo": "viajantes nos 6 primeiros meses"
+    },
+    "missao": "Descomplicar o acesso ao extraordinário. Transformar a complexidade logística de viagens internacionais em jornadas fluidas, seguras e memoráveis.",
+    "visao": "Ser a referência de modernidade e eficiência no turismo para a nova geração de viajantes, unindo a escala das grandes plataformas com a curadoria de um especialista.",
+    "valores": [
+      "Autonomia inteligente: ensinamos o viajante a explorar, não apenas a seguir o fluxo.",
+      "Agilidade: processos rápidos, digitais e sem papelada desnecessária.",
+      "Verdade na bagagem: só indicamos o que confiamos, de viajante para viajante.",
+      "Solidez: segurança não é opcional, é a base da nossa operação."
+    ],
+    "equipe_etiqueta": "Quem cuida da sua viagem",
+    "equipe_titulo": "Conheça quem cuida da sua viagem",
+    "equipe": [
+      {
+        "nome": "Guilherme Drubscky",
+        "nome_completo": "Guilherme Drubscky Caldas Vasconcelos",
+        "cargo": "Fundador e responsável pelo atendimento",
+        "bio": "À frente da Atlas Travel Brasil está Guilherme Drubscky, que une sua experiência como viajante a um atendimento próximo e personalizado. Seu propósito é ajudar cada cliente a tirar os planos do papel — especialmente quem sonha em realizar a primeira viagem internacional e precisa de orientação para dar esse primeiro passo.",
+        "especialidade": "Todo o atendimento é feito diretamente com ele, do primeiro contato ao planejamento da viagem.",
+        "foto": "img/equipe/guilherme-drubscky.webp",
+        "instagram": {
+          "usuario": "@guidrubscky",
+          "url": "https://www.instagram.com/guidrubscky/"
+        }
+      }
+    ],
+    "cta": {
+      "texto": "Falar com a Atlas",
+      "link": "#contato"
+    }
+  },
+  "diferenciais": {
+    "etiqueta": "Por que viajar com a Atlas",
+    "titulo": "Preço justo, segurança e confiança",
+    "subtitulo": "Os pilares que sustentam cada viagem que a Atlas ajuda a planejar.",
+    "imagem": "img/site/diferenciais-baloes.webp",
+    "itens": [
+      {
+        "icone": "fa-solid fa-earth-americas",
+        "titulo": "Primeira viagem internacional",
+        "descricao": "Orientação em cada etapa para quem nunca viajou para fora: da escolha do destino à organização dos serviços."
+      },
+      {
+        "icone": "fa-solid fa-user-check",
+        "titulo": "Atendimento direto",
+        "descricao": "Você fala diretamente com Guilherme Drubscky, responsável pela Atlas, do primeiro contato ao planejamento."
+      },
+      {
+        "icone": "fa-solid fa-clock",
+        "titulo": "Retorno em até 1 dia útil",
+        "descricao": "Retornamos sua solicitação em até 1 dia útil. O prazo da proposta varia conforme a complexidade da viagem."
+      },
+      {
+        "icone": "fa-solid fa-tags",
+        "titulo": "Preço justo",
+        "descricao": "Buscamos as melhores opções para o seu orçamento, com as inclusões e condições apresentadas de forma clara antes da contratação."
+      },
+      {
+        "icone": "fa-solid fa-shield-halved",
+        "titulo": "Segurança",
+        "descricao": "Agência de turismo com cadastro ativo no Cadastur, do Ministério do Turismo."
+      },
+      {
+        "icone": "fa-solid fa-handshake",
+        "titulo": "Confiança",
+        "descricao": "Só indicamos o que confiamos — visão de viajante para viajante, com transparência em cada proposta."
+      }
+    ]
+  },
+  "servicos": {
+    "etiqueta": "O que fazemos",
+    "titulo": "Monte sua viagem completa em um só lugar",
+    "subtitulo": "Viagens nacionais e internacionais, sem limitação de destino. Combinamos os serviços de que você precisa em uma proposta personalizada.",
+    "itens": [
+      {
+        "id": "passagens",
+        "icone": "fa-solid fa-plane-departure",
+        "titulo": "Passagens aéreas",
+        "descricao": "Voos nacionais e internacionais, com as opções de rota e horário que fazem sentido para a sua viagem.",
+        "imagem": "img/servicos/passagens.webp",
+        "beneficios": [
+          "Voos nacionais e internacionais",
+          "Comparação de rotas e horários",
+          "Orientação sobre bagagem e tarifas"
+        ],
+        "cta": {
+          "texto": "Cotar passagens",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "hospedagens",
+        "icone": "fa-solid fa-hotel",
+        "titulo": "Hospedagens",
+        "descricao": "Hotéis, resorts e pousadas escolhidos de acordo com o seu estilo de viagem, localização e orçamento.",
+        "imagem": "img/servicos/hospedagens.webp",
+        "beneficios": [
+          "Hotéis, resorts e pousadas",
+          "Localização estratégica",
+          "Opções para cada orçamento"
+        ],
+        "cta": {
+          "texto": "Cotar hospedagem",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "pacotes",
+        "icone": "fa-solid fa-suitcase-rolling",
+        "titulo": "Pacotes de viagem",
+        "descricao": "Serviços combinados em uma única proposta. As inclusões variam conforme o pacote e são apresentadas com clareza antes da contratação.",
+        "imagem": "img/servicos/pacotes.webp",
+        "beneficios": [
+          "Proposta personalizada",
+          "Inclusões detalhadas",
+          "Nacionais e internacionais"
+        ],
+        "cta": {
+          "texto": "Montar meu pacote",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "seguro-viagem",
+        "icone": "fa-solid fa-shield-heart",
+        "titulo": "Seguro viagem",
+        "descricao": "Pode estar incluído em determinadas propostas ou ser contratado separadamente. A assistência é prestada pela seguradora, conforme o produto contratado.",
+        "imagem": "img/servicos/seguro-viagem.webp",
+        "beneficios": [
+          "Incluído ou contratado à parte",
+          "Coberturas conforme o produto",
+          "Inclusão informada em cada oferta"
+        ],
+        "cta": {
+          "texto": "Cotar seguro",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "cruzeiros",
+        "icone": "fa-solid fa-ship",
+        "titulo": "Cruzeiros",
+        "descricao": "Roteiros marítimos para quem quer conhecer vários destinos em uma só viagem.",
+        "imagem": "img/servicos/cruzeiros.webp",
+        "beneficios": [
+          "Roteiros nacionais e internacionais",
+          "Escolha de cabine e itinerário",
+          "Combinação com aéreo e hospedagem"
+        ],
+        "cta": {
+          "texto": "Ver cruzeiros",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "passeios-roteiros",
+        "icone": "fa-solid fa-map-location-dot",
+        "titulo": "Passeios e roteiros personalizados",
+        "descricao": "Roteiros ajustados ao seu tempo, ritmo e orçamento, com passeios que fazem sentido para o seu perfil.",
+        "imagem": "img/servicos/passeios-roteiros.webp",
+        "beneficios": [
+          "Roteiro sob medida",
+          "Passeios e city tours",
+          "Dicas de quem viaja"
+        ],
+        "cta": {
+          "texto": "Quero um roteiro",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "transfers",
+        "icone": "fa-solid fa-van-shuttle",
+        "titulo": "Transfers",
+        "descricao": "Traslados entre aeroporto, hotel e passeios para você chegar ao destino sem preocupação.",
+        "imagem": "img/servicos/transfers.webp",
+        "beneficios": [
+          "Aeroporto e hotel",
+          "Traslados para passeios",
+          "Mais tranquilidade na chegada"
+        ],
+        "cta": {
+          "texto": "Cotar transfer",
+          "link": "#contato"
+        }
+      },
+      {
+        "id": "aluguel-de-carros",
+        "icone": "fa-solid fa-car-side",
+        "titulo": "Aluguel de carros",
+        "descricao": "Liberdade para explorar o destino no seu ritmo, com a locação organizada antes da viagem.",
+        "imagem": "img/servicos/aluguel-de-carros.webp",
+        "beneficios": [
+          "Retirada no aeroporto ou na cidade",
+          "Categorias para cada viagem",
+          "Reserva antecipada"
+        ],
+        "cta": {
+          "texto": "Cotar carro",
+          "link": "#contato"
+        }
+      }
+    ]
+  },
+  "depoimentos": {
+    "etiqueta": "Prova social",
+    "titulo": "Experiências reais de quem já viajou com a Atlas",
+    "subtitulo": "A confiança de quem já escolheu a Atlas para tirar a viagem do papel.",
+    "fonte": "Google",
+    "itens": [],
+    "link_avaliacoes": {
+      "texto": "Veja as avaliações dos nossos clientes no Google",
+      "descricao": "Relatos de quem já viajou com a Atlas Travel Brasil.",
+      "link": "https://share.google/5XunhUrmV0CyAThkY"
+    }
+  },
+  "galeria": {
+    "etiqueta": "Destinos que inspiram",
+    "titulo": "Para onde vai o seu sonho?",
+    "subtitulo": "Alguns destinos que despertam o desejo de viajar. A Atlas atende muitos outros, nacionais e internacionais.",
+    "categorias": [
+      "Todos",
+      "Europa",
+      "América do Sul",
+      "Caribe"
+    ],
+    "fotos": [
+      {
+        "url": "img/galeria/paris.webp",
+        "miniatura": "img/galeria/paris-mini.webp",
+        "titulo": "Torre Eiffel",
+        "local": "Paris, França",
+        "categoria": "Europa",
+        "alt": "Torre Eiffel às margens do rio Sena, em Paris"
+      },
+      {
+        "url": "img/galeria/roma.webp",
+        "miniatura": "img/galeria/roma-mini.webp",
+        "titulo": "Coliseu",
+        "local": "Roma, Itália",
+        "categoria": "Europa",
+        "alt": "Coliseu de Roma ao entardecer"
+      },
+      {
+        "url": "img/galeria/lisboa.webp",
+        "miniatura": "img/galeria/lisboa-mini.webp",
+        "titulo": "Bondes de Lisboa",
+        "local": "Lisboa, Portugal",
+        "categoria": "Europa",
+        "alt": "Bonde amarelo em rua histórica de Lisboa"
+      },
+      {
+        "url": "img/galeria/buenos-aires-obelisco.webp",
+        "miniatura": "img/galeria/buenos-aires-obelisco-mini.webp",
+        "titulo": "Obelisco",
+        "local": "Buenos Aires, Argentina",
+        "categoria": "América do Sul",
+        "alt": "Vista aérea do Obelisco de Buenos Aires"
+      },
+      {
+        "url": "img/galeria/buenos-aires-caminito.webp",
+        "miniatura": "img/galeria/buenos-aires-caminito-mini.webp",
+        "titulo": "Caminito",
+        "local": "La Boca, Buenos Aires",
+        "categoria": "América do Sul",
+        "alt": "Casas coloridas do Caminito, em Buenos Aires"
+      },
+      {
+        "url": "img/galeria/ushuaia.webp",
+        "miniatura": "img/galeria/ushuaia-mini.webp",
+        "titulo": "Fim do mundo",
+        "local": "Ushuaia, Argentina",
+        "categoria": "América do Sul",
+        "alt": "Montanhas nevadas às margens do Canal de Beagle, em Ushuaia"
+      },
+      {
+        "url": "img/galeria/cancun.webp",
+        "miniatura": "img/galeria/cancun-mini.webp",
+        "titulo": "Zona Hoteleira",
+        "local": "Cancún, México",
+        "categoria": "Caribe",
+        "alt": "Vista aérea da zona hoteleira de Cancún e do mar do Caribe"
+      },
+      {
+        "url": "img/galeria/punta-cana.webp",
+        "miniatura": "img/galeria/punta-cana-mini.webp",
+        "titulo": "Praias do Caribe",
+        "local": "Punta Cana, República Dominicana",
+        "categoria": "Caribe",
+        "alt": "Praia de areia branca e mar azul em Punta Cana"
+      }
+    ]
+  },
+  "faq": {
+    "etiqueta": "Dúvidas frequentes",
+    "titulo": "Perguntas frequentes",
+    "subtitulo": "O essencial antes de falar com a gente.",
+    "itens": [
+      {
+        "pergunta": "Como funciona o atendimento?",
+        "resposta": "Nosso atendimento é 100% digital, principalmente pelo WhatsApp, diretamente com Guilherme Drubscky, responsável pela Atlas. Não temos atendimento presencial."
+      },
+      {
+        "pergunta": "Em quanto tempo recebo um retorno?",
+        "resposta": "Retornamos sua solicitação em até 1 dia útil. O prazo de elaboração da proposta depende das características da viagem e das consultas aos fornecedores."
+      },
+      {
+        "pergunta": "Quero fazer minha primeira viagem internacional. Vocês podem me ajudar?",
+        "resposta": "Sim! Ajudamos você a entender as opções de destinos, organizar o planejamento e escolher os serviços conforme suas preferências e seu orçamento."
+      },
+      {
+        "pergunta": "O que está incluído em um pacote?",
+        "resposta": "As inclusões variam conforme a proposta e são apresentadas de forma clara antes da contratação."
+      },
+      {
+        "pergunta": "Vocês atendem somente viagens internacionais?",
+        "resposta": "Não. Trabalhamos com viagens nacionais e internacionais, para quem vai viajar pela primeira vez e também para viajantes experientes."
+      },
+      {
+        "pergunta": "Quais são as formas de pagamento?",
+        "resposta": "Aceitamos Pix e cartão de crédito. Parcelamento, descontos no Pix, sinal, alterações, cancelamentos e reembolsos variam conforme o produto, o fornecedor e as condições de cada contratação — tudo é informado na proposta."
+      },
+      {
+        "pergunta": "O seguro viagem está incluído?",
+        "resposta": "Depende da proposta. O seguro viagem pode estar incluído em determinadas ofertas ou ser contratado separadamente, e a inclusão é informada em cada oferta. A assistência durante a viagem é prestada pela seguradora, conforme o produto contratado."
+      },
+      {
+        "pergunta": "Preciso de passaporte ou visto?",
+        "resposta": "Depende do destino, do itinerário e do perfil de cada viajante. Durante o planejamento, orientamos sobre a documentação da sua viagem com base nas regras oficiais vigentes."
+      },
+      {
+        "pergunta": "Qual é o horário de atendimento?",
+        "resposta": "Segunda a sexta-feira, das 10h às 19h (horário de Brasília). Finais de semana e feriados, mediante agendamento."
+      },
+      {
+        "pergunta": "Como acompanho as ofertas da Atlas?",
+        "resposta": "Entre para o Atlas Club, nosso grupo de promoções no WhatsApp, e acompanhe as ofertas de viagens. As ofertas com preço sempre trazem datas, inclusões e condições."
+      }
+    ]
+  },
+  "cta_final": {
+    "titulo": "Pronto para tirar a viagem do papel?",
+    "subtitulo": "Conte para onde você sonha ir. Retornamos sua solicitação em até 1 dia útil.",
+    "imagem_fundo": "img/site/cta-praia.webp",
+    "botao": {
+      "texto": "Falar no WhatsApp",
+      "link": "https://wa.me/5531997793511?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20proposta%20de%20viagem.",
+      "icone": "fa-brands fa-whatsapp"
+    }
+  },
+  "contato": {
+    "etiqueta": "Contato",
+    "titulo": "Vamos planejar a sua viagem?",
+    "subtitulo": "Retornamos sua solicitação em até 1 dia útil. O prazo de elaboração da proposta pode variar conforme a complexidade da viagem e as consultas aos fornecedores.",
+    "telefone": {
+      "exibicao": "(31) 99779-3511",
+      "link": "tel:+5531997793511"
+    },
+    "whatsapp": {
+      "exibicao": "(31) 99779-3511",
+      "numero": "5531997793511",
+      "mensagem_padrao": "Olá! Vim pelo site e gostaria de uma proposta de viagem.",
+      "link": "https://wa.me/5531997793511?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20uma%20proposta%20de%20viagem."
+    },
+    "email": {
+      "exibicao": "contato@atlastravelbr.com",
+      "link": "mailto:contato@atlastravelbr.com"
+    },
+    "horario_atendimento": [
+      {
+        "dias": "Segunda a sexta-feira",
+        "horario": "10h às 19h"
+      },
+      {
+        "dias": "Finais de semana e feriados",
+        "horario": "Mediante agendamento"
+      },
+      {
+        "dias": "Fuso",
+        "horario": "Horário de Brasília"
+      }
+    ],
+    "formulario": {
+      "titulo": "Solicite sua proposta",
+      "campos": [
+        {
+          "nome": "nome",
+          "rotulo": "Nome completo",
+          "tipo": "text",
+          "obrigatorio": true,
+          "placeholder": "Seu nome"
+        },
+        {
+          "nome": "email",
+          "rotulo": "E-mail",
+          "tipo": "email",
+          "obrigatorio": true,
+          "placeholder": "seu@email.com"
+        },
+        {
+          "nome": "telefone",
+          "rotulo": "WhatsApp",
+          "tipo": "tel",
+          "obrigatorio": true,
+          "placeholder": "(00) 00000-0000"
+        },
+        {
+          "nome": "destino",
+          "rotulo": "Destino desejado",
+          "tipo": "text",
+          "obrigatorio": false,
+          "placeholder": "Para onde você quer ir?"
+        },
+        {
+          "nome": "periodo",
+          "rotulo": "Período da viagem",
+          "tipo": "text",
+          "obrigatorio": false,
+          "placeholder": "Ex.: março de 2027"
+        },
+        {
+          "nome": "servico",
+          "rotulo": "O que você precisa",
+          "tipo": "select",
+          "obrigatorio": false,
+          "opcoes": [
+            "Primeira viagem internacional",
+            "Passagens aéreas",
+            "Hospedagem",
+            "Pacote de viagem",
+            "Seguro viagem",
+            "Cruzeiro",
+            "Transfer ou aluguel de carro",
+            "Passeios e roteiro personalizado",
+            "Outro"
+          ]
+        },
+        {
+          "nome": "mensagem",
+          "rotulo": "Mensagem",
+          "tipo": "textarea",
+          "obrigatorio": false,
+          "placeholder": "Conte um pouco sobre a viagem que você quer fazer"
+        }
+      ],
+      "botao": "Enviar solicitação",
+      "envio_email": {
+        "endpoint": "https://formsubmit.co/ajax/contato@atlastravelbr.com",
+        "assunto": "Nova solicitação de proposta pelo site"
+      },
+      "mensagem_sucesso": "Recebemos sua solicitação! Retornamos em até 1 dia útil. Se preferir, continue a conversa pelo WhatsApp.",
+      "mensagem_erro": "Não foi possível enviar agora. Tente novamente ou envie sua solicitação pelo WhatsApp.",
+      "continuar_whatsapp": "Continuar pelo WhatsApp",
+      "aviso_privacidade": "Usamos seus dados apenas para responder à sua solicitação. Veja a",
+      "link_privacidade": "politica-de-privacidade.html"
+    }
+  },
+  "endereco": {
+    "logradouro": "Rua Engenheiro Zoroastro Torres",
+    "numero": "237",
+    "bairro": "Santo Antônio",
+    "cidade": "Belo Horizonte",
+    "uf": "MG",
+    "cep": "CEP 30350-260",
+    "pais": "Brasil",
+    "referencia": "Endereço cadastral. Atendimento exclusivamente digital, sem atendimento presencial."
+  },
+  "redes_sociais": [
+    {
+      "nome": "Instagram",
+      "usuario": "@atlastravelbr",
+      "url": "https://www.instagram.com/atlastravelbr/",
+      "icone": "fa-brands fa-instagram",
+      "seguidores": null
+    },
+    {
+      "nome": "TikTok",
+      "usuario": "@atlastravelbr",
+      "url": "https://www.tiktok.com/@atlastravelbr",
+      "icone": "fa-brands fa-tiktok",
+      "seguidores": null
+    },
+    {
+      "nome": "WhatsApp",
+      "usuario": "(31) 99779-3511",
+      "url": "https://wa.me/5531997793511",
+      "icone": "fa-brands fa-whatsapp",
+      "seguidores": null
+    },
+    {
+      "nome": "Atlas Club",
+      "usuario": "PROMO | Atlas Club",
+      "url": "https://chat.whatsapp.com/IR0GnmVqbSjE00bgnPlZ2T",
+      "icone": "fa-solid fa-bullhorn",
+      "seguidores": null
+    }
+  ],
+  "rodape": {
+    "sobre": "Agência de turismo com atendimento 100% digital e personalizado para viagens nacionais e internacionais.",
+    "links_rapidos": [
+      {
+        "rotulo": "Sobre",
+        "link": "#sobre"
+      },
+      {
+        "rotulo": "Serviços",
+        "link": "#servicos"
+      },
+      {
+        "rotulo": "Destinos",
+        "link": "#galeria"
+      },
+      {
+        "rotulo": "Dúvidas",
+        "link": "#faq"
+      },
+      {
+        "rotulo": "Contato",
+        "link": "#contato"
+      },
+      {
+        "rotulo": "Atlas Club — ofertas no WhatsApp",
+        "link": "https://chat.whatsapp.com/IR0GnmVqbSjE00bgnPlZ2T"
+      }
+    ],
+    "links_legais": [
+      {
+        "rotulo": "Política de Privacidade",
+        "link": "politica-de-privacidade.html"
+      },
+      {
+        "rotulo": "Termos de Uso",
+        "link": "termos-de-uso.html"
+      }
+    ],
+    "formas_pagamento": [
+      "Pix",
+      "Cartão de crédito"
+    ],
+    "selos": [
+      {
+        "nome": "Cadastur",
+        "descricao": "Agência de Turismo · Ministério do Turismo · válido até 13/11/2027"
+      }
+    ],
+    "copyright": "© 2026 Atlas Travel Brasil · GUILHERME D C V · Todos os direitos reservados."
+  }
+}
