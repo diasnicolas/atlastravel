@@ -240,6 +240,9 @@
 .footer__bottom-inner { display: flex; align-items: center; justify-content: space-between; gap: 14px 28px; flex-wrap: wrap; padding-block: 22px; }
 .footer__legal-text p { margin: 0; font-size: .86rem; }
 .footer__ids { color: rgba(255, 255, 255, .45); font-size: .8rem !important; }
+.footer__credit { margin-top: 4px !important; color: rgba(255, 255, 255, .45); font-size: .8rem !important; }
+.footer__credit a { color: rgba(255, 255, 255, .75); font-weight: 600; transition: color .2s; }
+.footer__credit a:hover { color: var(--brand-accent); }
 .footer__legal { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .86rem; }
 .footer__legal a:hover { color: var(--brand-accent); }
 .footer__demo { display: flex; align-items: center; justify-content: center; gap: 8px; margin: 0; padding: 12px var(--gutter); background: rgba(0, 0, 0, .22); font-size: .8rem; color: rgba(255, 255, 255, .5); text-align: center; }

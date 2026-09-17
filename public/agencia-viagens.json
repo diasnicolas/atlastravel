@@ -673,6 +673,10 @@
         "descricao": "Agência de Turismo · Ministério do Turismo · válido até 13/11/2027"
       }
     ],
-    "copyright": "© 2026 Atlas Travel Brasil · GUILHERME D C V · Todos os direitos reservados."
+    "copyright": "© 2026 Atlas Travel Brasil · GUILHERME D C V · Todos os direitos reservados.",
+    "desenvolvido_por": {
+      "nome": "Zapturize",
+      "link": "https://zapturize.com.br"
+    }
   }
 }

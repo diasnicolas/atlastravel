@@ -2,7 +2,7 @@
 import type { AgencyData } from '../types/agencia';
 import { arr, composeAddress } from '../lib/format';
 import { isLinkTargetVisible } from '../lib/sections';
-import { linkProps, safeUrl } from '../lib/url';
+import { isSafe, linkProps, safeUrl } from '../lib/url';
 import { Brand, EmailText, Icon, SocialItems } from './ui';
 
 const PAYMENT_ICONS: [RegExp, string][] = [
@@ -109,6 +109,14 @@ export function Footer({ data, visible }: { data: AgencyData; visible: ReadonlyS
                 <span key={txt}>{i > 0 && <span aria-hidden="true"> • </span>}{txt}</span>
               ))}
             </p>
+            {r.desenvolvido_por?.nome && (
+              <p className="footer__credit">
+                Desenvolvido por{' '}
+                {isSafe(r.desenvolvido_por.link)
+                  ? <a {...linkProps(r.desenvolvido_por.link)}>{r.desenvolvido_por.nome}</a>
+                  : r.desenvolvido_por.nome}
+              </p>
+            )}
           </div>
           {legais.length > 0 && (
             <ul className="footer__legal">

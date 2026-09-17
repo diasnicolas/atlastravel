@@ -316,6 +316,8 @@ export interface Rodape {
   formas_pagamento?: string[];
   selos?: { nome?: string; descricao?: string }[];
   copyright?: string;
+  /** Crédito de desenvolvimento exibido na barra inferior do rodapé. */
+  desenvolvido_por?: { nome?: string; link?: string };
   aviso_demo?: string;
 }
 
