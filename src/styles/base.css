@@ -33,7 +33,7 @@
   --shadow-lg: 0 28px 70px rgba(var(--brand-dark-rgb), .18);
   --ease: cubic-bezier(.22, .61, .36, 1);
 
-  --topbar-h: 42px;
+  --topbar-h: 50px;
   --nav-h: 86px;
   --nav-h-scrolled: 70px;
   --section-y: clamp(72px, 9vw, 116px);
@@ -165,7 +165,7 @@ body.has-error .site-header { display: none; }
    ========================================================= */
 .site-header { position: fixed; inset: 0 0 auto; z-index: 900; }
 .topbar {
-  height: var(--topbar-h); color: rgba(255, 255, 255, .86); font-size: .82rem;
+  height: var(--topbar-h); color: rgba(255, 255, 255, .9); font-size: .92rem;
   border-bottom: 1px solid rgba(255, 255, 255, .14);
   transition: margin-top .35s var(--ease), background-color .35s;
   overflow: hidden;
@@ -194,7 +194,7 @@ body.has-error .site-header { display: none; }
 .nav { margin-left: auto; }
 .nav__list { display: flex; align-items: center; gap: 4px; }
 .nav__link {
-  position: relative; display: block; padding: 10px 14px;
+  position: relative; display: block; padding: 10px 14px; white-space: nowrap;
   font-family: var(--font-head); font-size: .92rem; font-weight: 600; color: var(--white);
   transition: color .2s;
 }
@@ -391,8 +391,8 @@ body.has-error .site-header { display: none; }
    Responsivo — cabeçalho / hero / busca
    ========================================================= */
 @media (max-width: 1180px) {
-  .nav__link { padding-inline: 10px; font-size: .88rem; }
-  .nav__link::after { left: 10px; right: 10px; }
+  .nav__link { padding-inline: 7px; font-size: .86rem; }
+  .nav__link::after { left: 7px; right: 7px; }
   .navbar__inner { gap: 18px; }
 }
 
@@ -435,11 +435,11 @@ body.has-error .site-header { display: none; }
 }
 
 @media (max-width: 640px) {
-  :root { --topbar-h: 38px; --nav-h: 72px; --nav-h-scrolled: 64px; }
+  :root { --topbar-h: 44px; --nav-h: 72px; --nav-h-scrolled: 64px; }
   .topbar__info .topbar__email { display: none; }
-  .topbar { font-size: .8rem; }
+  .topbar { font-size: .86rem; }
   .social--topbar { gap: 0; }
-  .social--topbar .social__link { width: 28px; height: 28px; font-size: .8rem; }
+  .social--topbar .social__link { width: 32px; height: 32px; font-size: .9rem; }
   .brand__logo { height: 38px; }
   .site-header.is-scrolled .brand__logo--dark { height: 36px; }
   .navbar__cta { display: none; }

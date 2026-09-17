@@ -14,7 +14,6 @@ import { SectionBoundary } from './components/SectionBoundary';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Search } from './components/Search';
-import { About } from './components/About';
 import { Numbers } from './components/Numbers';
 import { Team } from './components/Team';
 import { Differentials } from './components/Differentials';
@@ -54,7 +53,6 @@ function Site({ data }: { data: AgencyData }) {
       <main id="conteudo" tabIndex={-1} ref={mainRef}>
         {section('hero', <Hero data={data} visible={visible} />)}
         {section('hero-busca', <Search data={data} flat={!visible.has('hero')} />)}
-        {section('sobre', <About data={data} />)}
         {section('sobre-numeros', <Numbers data={data} />)}
         {section('sobre-equipe', <Team data={data} />)}
         {section('diferenciais', <Differentials data={data} />)}

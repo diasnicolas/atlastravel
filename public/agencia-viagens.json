@@ -46,12 +46,16 @@
       "ancora": "#hero"
     },
     {
-      "rotulo": "Sobre",
-      "ancora": "#sobre"
+      "rotulo": "Quem somos",
+      "ancora": "#sobre-equipe"
     },
     {
       "rotulo": "Serviços",
       "ancora": "#servicos"
+    },
+    {
+      "rotulo": "Avaliações",
+      "ancora": "#depoimentos"
     },
     {
       "rotulo": "Destinos",
@@ -138,7 +142,7 @@
       "Verdade na bagagem: só indicamos o que confiamos, de viajante para viajante.",
       "Solidez: segurança não é opcional, é a base da nossa operação."
     ],
-    "equipe_etiqueta": "Quem cuida da sua viagem",
+    "equipe_etiqueta": "Quem somos",
     "equipe_titulo": "Conheça quem cuida da sua viagem",
     "equipe": [
       {
@@ -147,7 +151,7 @@
         "cargo": "Fundador e responsável pelo atendimento",
         "bio": "À frente da Atlas Travel Brasil está Guilherme Drubscky, que une sua experiência como viajante a um atendimento próximo e personalizado. Seu propósito é ajudar cada cliente a tirar os planos do papel — especialmente quem sonha em realizar a primeira viagem internacional e precisa de orientação para dar esse primeiro passo.",
         "especialidade": "Todo o atendimento é feito diretamente com ele, do primeiro contato ao planejamento da viagem.",
-        "foto": "img/equipe/guilherme-drubscky.webp",
+        "foto": "img/equipe/guilherme-drubscky-escritorio.webp",
         "instagram": {
           "usuario": "@guidrubscky",
           "url": "https://www.instagram.com/guidrubscky/"
@@ -333,7 +337,7 @@
     ]
   },
   "depoimentos": {
-    "etiqueta": "Prova social",
+    "etiqueta": "Avaliações",
     "titulo": "Experiências reais de quem já viajou com a Atlas",
     "subtitulo": "A confiança de quem já escolheu a Atlas para tirar a viagem do papel.",
     "fonte": "Google",
@@ -347,7 +351,7 @@
   "galeria": {
     "etiqueta": "Destinos que inspiram",
     "titulo": "Para onde vai o seu sonho?",
-    "subtitulo": "Alguns destinos que despertam o desejo de viajar. A Atlas atende muitos outros, nacionais e internacionais.",
+    "subtitulo": "Alguns destinos que despertam o desejo de viajar. A Atlas atende esses e muitos outros, nacionais e internacionais.",
     "categorias": [
       "Todos",
       "Europa",
@@ -629,12 +633,16 @@
     "sobre": "Agência de turismo com atendimento 100% digital e personalizado para viagens nacionais e internacionais.",
     "links_rapidos": [
       {
-        "rotulo": "Sobre",
-        "link": "#sobre"
+        "rotulo": "Quem somos",
+        "link": "#sobre-equipe"
       },
       {
         "rotulo": "Serviços",
         "link": "#servicos"
+      },
+      {
+        "rotulo": "Avaliações",
+        "link": "#depoimentos"
       },
       {
         "rotulo": "Destinos",

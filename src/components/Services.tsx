@@ -3,6 +3,7 @@ import type { AgencyData } from '../types/agencia';
 import { arr } from '../lib/format';
 import { isSafe, linkProps, safeUrl } from '../lib/url';
 import { cx } from '../lib/css';
+import { waLink } from '../lib/whatsapp';
 import { Icon, Reveal, SectionHead } from './ui';
 
 export function Services({ data }: { data: AgencyData }) {
@@ -10,6 +11,9 @@ export function Services({ data }: { data: AgencyData }) {
   const itens = arr(s?.itens);
   const comp = arr(s?.servicos_complementares);
   if (!s || (!itens.length && !comp.length)) return null;
+  // CTA do card: WhatsApp com mensagem sobre o serviço; sem número, usa o link do JSON
+  const ctaHref = (titulo: string | undefined, link: string | undefined) =>
+    waLink(data.contato?.whatsapp?.numero, `Olá! Vim pelo site e tenho interesse em ${titulo || 'um serviço'}. Pode me ajudar com uma cotação?`) || link || '#contato';
   return (
     <section className="section servicos" id="servicos">
       <div className="container">
@@ -35,7 +39,7 @@ export function Services({ data }: { data: AgencyData }) {
                       </ul>
                     )}
                     {it.cta?.texto && (
-                      <a className="service__cta" {...linkProps(it.cta.link || '#contato')}>
+                      <a className="service__cta" {...linkProps(ctaHref(it.titulo, it.cta.link))}>
                         <span>{it.cta.texto}</span><Icon cls="fa-solid fa-arrow-right-long" />
                       </a>
                     )}

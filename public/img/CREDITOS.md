@@ -7,7 +7,7 @@ Foram redimensionadas e convertidas para WebP; o original de cada uma está indi
 
 | Arquivo | Origem |
 | --- | --- |
-| `equipe/guilherme-drubscky.webp` | Quadro do vídeo `ADS - se vc quer realizar viagem sonhos.mp4` (materiais do cliente; uso autorizado) |
+| `equipe/guilherme-drubscky-escritorio.webp` | Foto do cliente `materiais/novas_fotos/WhatsApp Image 2026-09-17 at 10.21.50.jpeg`, recortada em 4:5 (uso autorizado) |
 | `og-atlas-travel.jpg` | Arte de compartilhamento (1200×630) montada com a logo oficial e a foto de Paris abaixo |
 
 ## Unsplash (Licença Unsplash — uso comercial gratuito, sem atribuição obrigatória)

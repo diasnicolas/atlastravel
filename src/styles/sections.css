@@ -1,56 +1,7 @@
 /* =========================================================
-   Seções: sobre, números, equipe, diferenciais, serviços
+   Seções: números, equipe, diferenciais, serviços
    e depoimentos
    ========================================================= */
-
-/* ---------- Sobre ---------- */
-.sobre__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px, 7vw, 96px); align-items: center; }
-.sobre__grid--single { grid-template-columns: minmax(0, 820px); justify-content: center; }
-.sobre__media { position: relative; padding: 0 64px 72px 0; }
-.sobre__dots { position: absolute; left: -34px; top: -34px; width: 130px; height: 130px; color: var(--brand-secondary); opacity: .45; }
-.sobre__img { position: relative; border-radius: var(--radius-lg); overflow: hidden; }
-.sobre__img img { width: 100%; height: 100%; object-fit: cover; }
-.sobre__img--main { width: 84%; aspect-ratio: 4 / 5; box-shadow: var(--shadow); }
-.sobre__img--sec {
-  position: absolute; right: 0; bottom: 0; width: 56%; aspect-ratio: 4 / 3;
-  border: 8px solid var(--white); box-shadow: var(--shadow-lg);
-}
-.sobre__badge {
-  position: absolute; top: 34px; right: 12px; width: 156px; height: 156px; border-radius: 50%;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 18px;
-  background: var(--brand-primary); color: var(--white); box-shadow: 0 18px 40px rgba(var(--brand-primary-rgb), .4);
-}
-.sobre__badge svg { position: absolute; inset: 8px; width: calc(100% - 16px); height: calc(100% - 16px); color: rgba(255, 255, 255, .45); animation: spin 30s linear infinite; }
-.sobre__badge strong { font-family: var(--font-head); font-size: 3rem; font-weight: 800; line-height: 1; color: var(--brand-accent); }
-.sobre__badge span { font-family: var(--font-head); font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; line-height: 1.35; margin-top: 6px; }
-.sobre__content .section-head { margin-bottom: 18px; }
-.sobre__content .section-title { margin-bottom: 0; }
-.sobre__lead { font-family: var(--font-head); font-size: 1.14rem; font-weight: 600; color: var(--brand-primary); margin-bottom: 16px; }
-.sobre__p { color: var(--text); }
-
-.tabs { margin-top: 30px; }
-.tabs__list { display: flex; gap: 6px; border-bottom: 2px solid var(--line); overflow-x: auto; scrollbar-width: none; }
-.tabs__btn {
-  position: relative; display: inline-flex; align-items: center; gap: 9px; padding: 12px 18px; border: 0; background: none; white-space: nowrap;
-  font-family: var(--font-head); font-size: .95rem; font-weight: 700; color: var(--text-soft); transition: color .2s;
-}
-.tabs__btn i { color: var(--brand-secondary); }
-.tabs__btn::after { content: ""; position: absolute; left: 0; right: 0; bottom: -2px; height: 3px; border-radius: 3px; background: var(--brand-accent); transform: scaleX(0); transition: transform .3s var(--ease); }
-.tabs__btn:hover { color: var(--brand-primary); }
-.tabs__btn.is-active { color: var(--brand-primary); }
-.tabs__btn.is-active::after { transform: scaleX(1); }
-.tabs__panel { padding: 20px 0 4px; animation: swapIn .5s var(--ease); }
-.tabs__panel p { margin: 0; font-size: 1.02rem; }
-.values { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 20px; }
-.values li { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--brand-dark); }
-.values i { display: grid; place-items: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; font-size: .7rem; background: rgba(var(--brand-secondary-rgb), .15); color: var(--brand-primary); }
-
-.sobre__footer { display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; margin-top: 32px; padding-top: 28px; border-top: 1px solid var(--line); }
-.sobre__phone { display: flex; align-items: center; gap: 14px; }
-.sobre__phone-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: rgba(var(--brand-primary-rgb), .08); color: var(--brand-primary); font-size: 1.2rem; transition: background-color .25s, color .25s; }
-.sobre__phone:hover .sobre__phone-icon { background: var(--brand-primary); color: var(--white); }
-.sobre__phone small { display: block; font-size: .78rem; color: var(--text-soft); line-height: 1.3; }
-.sobre__phone strong { font-family: var(--font-head); font-size: 1.15rem; color: var(--brand-dark); }
 
 /* ---------- Faixa de números ---------- */
 .numeros-band {
@@ -258,21 +209,11 @@
 @media (max-width: 960px) {
   .profile { grid-template-columns: 1fr; }
   .profile__media { max-width: 420px; width: calc(100% - 24px); }
-  .sobre__grid { grid-template-columns: 1fr; }
-  .sobre__media { max-width: 600px; margin-inline: auto; width: 100%; }
   .diferenciais__head { grid-template-columns: 1fr; gap: 20px; }
   .diferenciais__bg { width: 100%; height: 60%; bottom: auto; }
   .reviews__head { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 640px) {
-  .sobre__media { padding: 0 24px 56px 0; }
-  .sobre__dots { left: -12px; top: -16px; width: 90px; height: 90px; }
-  .sobre__img--main { width: 88%; }
-  .sobre__img--sec { width: 58%; border-width: 5px; }
-  .sobre__badge { width: 112px; height: 112px; top: 18px; right: 0; padding: 12px; }
-  .sobre__badge strong { font-size: 2.1rem; }
-  .sobre__badge span { font-size: .6rem; }
-  .values { grid-template-columns: 1fr; }
   .numeros { grid-template-columns: repeat(2, 1fr); row-gap: 34px; }
   .numeros__item:nth-child(odd)::before { display: none; }
   .team { gap: 16px; }

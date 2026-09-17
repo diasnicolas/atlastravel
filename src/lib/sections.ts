@@ -3,22 +3,21 @@ import { arr } from './format';
 
 /** Ids de todas as seções renderizadas pelo template. */
 export const SECTION_IDS = [
-  'hero', 'hero-busca', 'sobre', 'sobre-numeros', 'sobre-equipe', 'diferenciais', 'servicos',
+  'hero', 'hero-busca', 'sobre-numeros', 'sobre-equipe', 'diferenciais', 'servicos',
   'depoimentos', 'galeria', 'faq', 'cta-final', 'contato', 'rodape',
 ] as const;
 export type SectionId = (typeof SECTION_IDS)[number];
 
 /**
- * Seções que existem no JSON mas não são exibidas neste template (destinos, newsletter).
+ * Seções que existem no JSON mas não são exibidas neste template (sobre, destinos, newsletter).
  * Continuam "gerenciadas": links para elas são ocultados como os de qualquer seção ausente.
  */
-const REMOVED_SECTION_IDS: readonly string[] = ['destinos', 'newsletter'];
+const REMOVED_SECTION_IDS: readonly string[] = ['sobre', 'destinos', 'newsletter'];
 
 /** Regras de exibição: seção sem dados não é renderizada (e some do menu). */
 const rules: Record<SectionId, (d: AgencyData) => boolean> = {
   hero: (d) => !!d.hero,
   'hero-busca': (d) => (d.hero?.busca?.ativo ? arr(d.hero.busca.campos).length > 0 : false) || arr(d.hero?.estatisticas).length > 0,
-  sobre: (d) => !!d.sobre,
   'sobre-numeros': (d) => arr(d.sobre?.numeros).length > 0,
   'sobre-equipe': (d) => arr(d.sobre?.equipe).length > 0,
   diferenciais: (d) => !!d.diferenciais && (arr(d.diferenciais.itens).length > 0 || !!d.diferenciais.titulo),
