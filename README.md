@@ -40,6 +40,27 @@ no painel são as mesmas do JSON em kebab-case; o adaptador aceita kebab e snake
 Não é preciso mexer no código para alterar textos, cores, fontes, imagens ou contatos. As exceções
 são os metadados de compartilhamento em `index.html` (ver abaixo) e as páginas legais.
 
+## Formulário de contato → CRM da ZapTurize → WhatsApp
+
+Com `VITE_ZAPTURIZE_FORM_KEY` definido (`.env`), o envio do formulário (`src/components/Contact.tsx`):
+
+1. faz `POST {VITE_ZAPTURIZE_API_URL}/forms/{FORM_KEY}/submit` com `x-api-key` e os campos
+   preenchidos (chave = `nome` do campo no JSON do site), via `src/lib/leads.ts`. O servidor cria o
+   lead no funil do CRM (ou anexa a um lead aberto com o mesmo e-mail/telefone);
+2. abre o WhatsApp da agência com a mensagem pronta (todos os campos preenchidos). A aba é aberta no
+   clique e recebe o destino quando a API responde, para o navegador não bloquear o pop-up;
+3. mostra a mensagem de sucesso com o botão "Continuar pelo WhatsApp" (caso a aba tenha sido bloqueada).
+
+Se a API falhar, o visitante ainda é levado ao WhatsApp e o erro fica no console do navegador.
+O formulário existe no painel (menu **Formulários**) com a chave `site-contato`. As chaves dos campos
+lá (`campo-nome`, `campo-email`, `campo-whatsapp`, `campo-destino`, `campo-necessidade`, `campo-mensagem`)
+são traduzidas a partir dos nomes do site em `FIELD_MAP` (`src/lib/leads.ts`); `periodo` não tem campo
+no painel e entra no texto da mensagem. Definição em `../../importacao-zapturize/formulario-crm.json`. Sem `VITE_ZAPTURIZE_FORM_KEY`, vale o comportamento
+anterior (FormSubmit por e-mail se `formulario.envio_email.endpoint` existir; senão, só WhatsApp).
+
+A API externa do CRM (`/api/external/crm`, token Bearer) **não** é usada pelo site: o navegador não
+pode chamá-la (CORS) e o token dá leitura dos leads, então não pode ficar no JavaScript público.
+
 ## Estrutura de arquivos públicos
 
 | Caminho | Conteúdo |

@@ -6,6 +6,7 @@ import { arr, composeAddress, isEmail } from '../lib/format';
 import { cx } from '../lib/css';
 import { isSafe, linkProps, safeUrl } from '../lib/url';
 import { openInNewTab, waLink } from '../lib/whatsapp';
+import { leadsEnabled, submitLead } from '../lib/leads';
 import { EmailText, Icon, Reveal, SectionHead } from './ui';
 
 type FieldEl = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
@@ -78,6 +79,29 @@ export function Contact({ data }: { data: AgencyData }) {
       .filter((l) => l.value);
     const lines = filled.map((l) => `*${l.label}:* ${l.value}`);
     const url = waLink(w.numero, `${w.mensagem_padrao || 'Olá! Vim pelo site.'}\n\n${lines.join('\n')}`);
+
+    if (leadsEnabled) {
+      // 1) Lead no CRM da ZapTurize; 2) caixa de sucesso; 3) WhatsApp com a mensagem pronta.
+      // O window.open vem logo depois da resposta da API, ainda dentro da janela de ativação
+      // do clique (≈5 s no Chrome/Firefox). Se o navegador bloquear, fica o botão na caixa.
+      const lead: Record<string, string> = {};
+      campos.forEach((fd, i) => { const v = (values[i] ?? '').trim(); if (fd.nome && v) lead[fd.nome] = v; });
+      const hp = (e.currentTarget.elements.namedItem('website') as HTMLInputElement | null)?.value ?? '';
+      if (hp) lead.website = hp;
+      setWaUrl(url);
+      setStatus('sending');
+      try {
+        const result = await submitLead(lead, 4500);
+        if (!result.ok) console.error('[atlas] lead não registrado no CRM:', result.error);
+      } finally {
+        setStatus('success');
+        resetFields();
+      }
+      if (url) {
+        try { openInNewTab(url); } catch (err) { console.warn('[atlas] WhatsApp não abriu automaticamente:', err); }
+      }
+      return;
+    }
 
     if (!emailEndpoint) {
       // Sem serviço de e-mail configurado: a solicitação segue direto para o WhatsApp
@@ -229,11 +253,14 @@ export function Contact({ data }: { data: AgencyData }) {
               <form className="contact-form" id="contact-form" noValidate onSubmit={onSubmit}>
                 {f?.titulo && <h3 className="contact-form__title">{f.titulo}</h3>}
                 <div className="contact-form__grid">{campos.map(renderField)}</div>
-                {emailEndpoint && (
+                {leadsEnabled && (
+                  <input className="contact-form__hp" type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+                )}
+                {!leadsEnabled && emailEndpoint && (
                   <input className="contact-form__hp" type="text" name="_honey" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                 )}
                 <button className="btn btn--accent btn--lg btn--block" type="submit" disabled={status === 'sending'} aria-busy={status === 'sending'}>
-                  <Icon cls={status === 'sending' ? 'fa-solid fa-spinner fa-spin' : emailEndpoint ? 'fa-regular fa-paper-plane' : 'fa-brands fa-whatsapp'} />
+                  <Icon cls={status === 'sending' ? 'fa-solid fa-spinner fa-spin' : emailEndpoint && !leadsEnabled ? 'fa-regular fa-paper-plane' : 'fa-brands fa-whatsapp'} />
                   <span>{status === 'sending' ? 'Enviando…' : f?.botao || 'Enviar'}</span>
                 </button>
                 {f?.aviso_privacidade && (
@@ -249,7 +276,7 @@ export function Contact({ data }: { data: AgencyData }) {
                   {status === 'success' && (
                     <>
                       <p><Icon cls="fa-solid fa-circle-check" /><span>{f?.mensagem_sucesso || 'Mensagem enviada!'}</span></p>
-                      {emailEndpoint && waUrl && (
+                      {waUrl && (
                         <a className="btn btn--primary" href={safeUrl(waUrl)} target="_blank" rel="noopener">
                           <Icon cls="fa-brands fa-whatsapp" /><span>{f?.continuar_whatsapp || 'Continuar pelo WhatsApp'}</span>
                         </a>
