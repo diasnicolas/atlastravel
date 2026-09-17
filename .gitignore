@@ -1,2 +1,6 @@
 node_modules
 dist
+
+# variáveis locais (chave da API da ZapTurize); use .env.example como modelo
+.env
+.env.local

@@ -12,15 +12,39 @@ npm run build    # gera dist/
 npm run preview  # serve o dist/
 ```
 
-Quase todo o conteúdo do site vem de `public/agencia-viagens.json`. Não é preciso mexer no código
-para alterar textos, cores, fontes, imagens ou contatos. As exceções são os metadados de
-compartilhamento em `index.html` (ver abaixo) e as páginas legais.
+## De onde vem o conteúdo
+
+O site carrega o conteúdo do **painel da agência na ZapTurize** (módulo Landing Pages), pela API
+pública configurada em `.env`:
+
+```
+VITE_ZAPTURIZE_API_URL=https://api.zapturize.com.br/api/public/landing-pages/index
+VITE_ZAPTURIZE_API_KEY=<chave pública de leitura da landing page>
+```
+
+Fluxo (`src/data/useAgencyData.ts`):
+
+1. Busca a landing page na API (header `x-api-key`) e converte `sections → datasets → fields`
+   para o formato do site com `src/data/zapturize.ts` (`toAgencyData`).
+2. Se a API falhar (rede, chave inválida, página despublicada), usa `public/agencia-viagens.json`
+   como reserva e registra um aviso no console. `<html data-source="zapturize|local">` indica a origem.
+3. `?data=<url>` na query string força um JSON alternativo (testes), ignorando a API.
+
+A chave é de leitura pública e vai para o navegador; a API só devolve páginas com status
+**Publicado**. Sem as duas variáveis, o site usa apenas o JSON local.
+
+O conteúdo foi importado no painel a partir de `../../importacao-zapturize/atlas-travel-zapturize-import.json`
+(gerado de `public/agencia-viagens.json`, com as imagens no Cloudflare Images). As chaves dos campos
+no painel são as mesmas do JSON em kebab-case; o adaptador aceita kebab e snake_case.
+
+Não é preciso mexer no código para alterar textos, cores, fontes, imagens ou contatos. As exceções
+são os metadados de compartilhamento em `index.html` (ver abaixo) e as páginas legais.
 
 ## Estrutura de arquivos públicos
 
 | Caminho | Conteúdo |
 | --- | --- |
-| `public/agencia-viagens.json` | Conteúdo do site |
+| `public/agencia-viagens.json` | Conteúdo do site (reserva; a fonte principal é a API da ZapTurize) |
 | `public/brand/` | Logotipos e favicon gerados do SVG oficial (`materiais/Logo`) |
 | `public/img/` | Todas as fotos, **servidas localmente** e otimizadas em WebP. Origem de cada uma em `public/img/CREDITOS.md` |
 | `public/img/og-atlas-travel.jpg` | Imagem de compartilhamento (1200×630) |
