@@ -341,7 +341,46 @@
     "titulo": "Experiências reais de quem já viajou com a Atlas",
     "subtitulo": "A confiança de quem já escolheu a Atlas para tirar a viagem do papel.",
     "fonte": "Google",
-    "itens": [],
+    "itens": [
+      {
+        "nome": "Larissa Sales",
+        "avaliacao": 5,
+        "data": "2026-07-01",
+        "texto": "Nossa experiência foi excelente! Como era nossa primeira viagem internacional, estávamos com bastante receio, principalmente por estarmos viajando com nossa filha pequena. O Guilherme foi extremamente atencioso desde o primeiro contato, tirou todas as nossas dúvidas e nos passou muita segurança durante todo o planejamento. Durante a viagem, tivemos um imprevisto no hotel e ele resolveu tudo com muita rapidez e atenção, mesmo à distância. Isso fez toda a diferença para que aproveitássemos a viagem com tranquilidade. Com certeza valeu muito a pena contar com o suporte dele. Recomendo de olhos fechados!"
+      },
+      {
+        "nome": "Bárbara Corlaiti",
+        "avaliacao": 5,
+        "data": "2026-05-01",
+        "texto": "Experiência excelente que tive. Tudo super organizado. Me deram assistência antes da viagem e durante todo tempo ate eu chegar de volta ao Brasil, o que foi um super diferencial pq estava viajando sozinha. Me deixaram muito segura. Amei e ja quero marcar a próxima."
+      },
+      {
+        "nome": "Bruno Tavares Assis",
+        "avaliacao": 5,
+        "data": "2026-05-01",
+        "texto": "Que experiência incrível!! Gostaria de agradecer muito ao Guilherme sua equipe pelo atendimento incrível que eu tive, fez minha viagem valer muito mais, não me preocupei com nada, e tudo que a Atlas programou pra mim ficou sensacional. Mais uma vez, fico imensamento agradecido, e indico de olhos fechado!"
+      },
+      {
+        "nome": "Fernanda Horta",
+        "avaliacao": 5,
+        "data": "2026-05-01",
+        "texto": "O atendimento foi muito profissional, atencioso e tivemos os melhores momentos na nossa viagem por causa da Atlas! Entregamos tudo nas mãos deles e eles nos entregaram um trabalho impecável"
+      },
+      {
+        "nome": "Felipe Matias",
+        "avaliacao": 5,
+        "data": "2026-05-01",
+        "texto": "Melhor agência de viagem que eu ja viajei. O Guilherme é super atenciosos com todos os detalhes da viagem. Recomendo muito essa agência. Não vejo a hora de programar o próximo destino."
+      },
+      {
+        "nome": "Thiago Capanema",
+        "avaliacao": 5,
+        "data": "2026-05-01",
+        "texto": "Ótima experiência! Atendimento rápido, transparente e com ótimas opções de viagem. Realmente se preocupa com o cliente. Recomendo demais! ❤️"
+      }
+    ],
+    "media_avaliacao": 5,
+    "total_avaliacoes": 43,
     "link_avaliacoes": {
       "texto": "Veja as avaliações dos nossos clientes no Google",
       "descricao": "Relatos de quem já viajou com a Atlas Travel Brasil.",
