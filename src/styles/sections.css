@@ -170,7 +170,7 @@
 
 .carousel { --per-view: 3; --gap: 28px; position: relative; }
 .carousel__viewport { overflow: hidden; margin: -20px -14px; padding: 20px 14px; }
-.carousel__track { display: flex; gap: var(--gap); transition: transform .7s var(--ease); will-change: transform; }
+.carousel__track { display: flex; align-items: flex-start; gap: var(--gap); transition: transform .7s var(--ease); will-change: transform; }
 .carousel__slide { flex: 0 0 calc((100% - var(--gap) * (var(--per-view) - 1)) / var(--per-view)); min-width: 0; transition: opacity .5s; }
 .carousel__slide[aria-hidden="true"] { opacity: .45; }
 .review {
@@ -184,6 +184,11 @@
 .review__trip { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px; background: rgba(var(--brand-primary-rgb), .07); color: var(--brand-primary); font-family: var(--font-head); font-size: .78rem; font-weight: 700; }
 .review__trip i { font-size: .72rem; transform: rotate(-30deg); }
 .review__text { flex: 1; margin: 0 0 22px; }
+/* 5 linhas no máximo; a altura mínima mantém todos os cards do mesmo tamanho */
+.review__text p.is-clamped { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; overflow: hidden; min-height: calc(1.75em * 5); }
+.review__more-slot { height: 1.75rem; margin-top: 8px; display: flex; align-items: center; }
+.review__more { padding: 0; border: 0; background: none; cursor: pointer; font-family: var(--font-head); font-size: .86rem; font-weight: 700; color: var(--brand-secondary); text-decoration: underline; text-underline-offset: 3px; }
+.review__more:hover, .review__more:focus-visible { color: var(--brand-primary); }
 .review__text p { margin: 0; font-size: .98rem; line-height: 1.75; color: var(--text); }
 .review__author { display: flex; align-items: center; gap: 14px; padding-top: 18px; border-top: 1px solid var(--line); }
 .review__author img, .review__initial { width: 54px; height: 54px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 3px solid var(--brand-light); box-shadow: 0 0 0 2px rgba(var(--brand-secondary-rgb), .5); }
