@@ -20,6 +20,7 @@ import { Differentials } from './components/Differentials';
 import { Services } from './components/Services';
 import { Testimonials } from './components/Testimonials';
 import { Gallery } from './components/Gallery';
+import { AtlasClub } from './components/AtlasClub';
 import { Faq } from './components/Faq';
 import { CtaFinal } from './components/CtaFinal';
 import { Contact } from './components/Contact';
@@ -59,6 +60,7 @@ function Site({ data }: { data: AgencyData }) {
         {section('servicos', <Services data={data} />)}
         {section('depoimentos', <Testimonials data={data} />)}
         {section('galeria', <Gallery data={data} />)}
+        {section('atlas-club', <AtlasClub data={data} />)}
         {section('faq', <Faq data={data} />)}
         {section('cta-final', <CtaFinal data={data} />)}
         {section('contato', <Contact data={data} />)}

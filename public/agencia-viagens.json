@@ -425,6 +425,40 @@
       }
     ]
   },
+  "atlas_club": {
+    "etiqueta": "Grupo de ofertas no WhatsApp",
+    "titulo": "As melhores oportunidades podem chegar primeiro no Atlas Club! ✈️💚",
+    "paragrafos": [
+      "Nosso grupo de promoções no WhatsApp é para quem quer tirar a próxima viagem do papel e aproveitar boas oportunidades pelo Brasil e pelo mundo.",
+      "Por lá, compartilhamos todos os dias ofertas imperdíveis, cupons de desconto e condições especiais de pagamento. E tem mais: algumas ofertas são enviadas somente no grupo e não aparecem nas nossas redes sociais!",
+      "Seja para realizar aquela viagem dos sonhos ou descobrir um destino que você nem imaginava conhecer, vale ficar de olho. As oportunidades estão sujeitas à disponibilidade e podem acabar rápido!"
+    ],
+    "destaques": [
+      {
+        "icone": "fa-solid fa-tags",
+        "texto": "Ofertas imperdíveis todos os dias"
+      },
+      {
+        "icone": "fa-solid fa-ticket",
+        "texto": "Cupons de desconto"
+      },
+      {
+        "icone": "fa-solid fa-credit-card",
+        "texto": "Condições especiais de pagamento"
+      },
+      {
+        "icone": "fa-solid fa-star",
+        "texto": "Ofertas exclusivas, só no grupo"
+      }
+    ],
+    "chamada": "Entre gratuitamente e fique por dentro da próxima oferta!",
+    "icone": "fa-brands fa-whatsapp",
+    "botao": {
+      "texto": "Quero fazer parte do Atlas Club",
+      "link": "https://chat.whatsapp.com/IR0GnmVqbSjE00bgnPlZ2T",
+      "icone": "fa-brands fa-whatsapp"
+    }
+  },
   "faq": {
     "etiqueta": "Dúvidas frequentes",
     "titulo": "Perguntas frequentes",

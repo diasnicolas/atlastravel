@@ -4,7 +4,7 @@ import { arr } from './format';
 /** Ids de todas as seções renderizadas pelo template. */
 export const SECTION_IDS = [
   'hero', 'hero-busca', 'sobre-numeros', 'sobre-equipe', 'diferenciais', 'servicos',
-  'depoimentos', 'galeria', 'faq', 'cta-final', 'contato', 'rodape',
+  'depoimentos', 'galeria', 'atlas-club', 'faq', 'cta-final', 'contato', 'rodape',
 ] as const;
 export type SectionId = (typeof SECTION_IDS)[number];
 
@@ -24,6 +24,7 @@ const rules: Record<SectionId, (d: AgencyData) => boolean> = {
   servicos: (d) => !!d.servicos && (arr(d.servicos.itens).length > 0 || arr(d.servicos.servicos_complementares).length > 0),
   depoimentos: (d) => arr(d.depoimentos?.itens).length > 0 || !!d.depoimentos?.link_avaliacoes?.link,
   galeria: (d) => arr(d.galeria?.fotos).some((f) => f.miniatura || f.url),
+  'atlas-club': (d) => !!d.atlas_club?.titulo,
   faq: (d) => arr(d.faq?.itens).some((q) => q.pergunta),
   'cta-final': (d) => !!d.cta_final?.titulo,
   contato: (d) => !!d.contato,

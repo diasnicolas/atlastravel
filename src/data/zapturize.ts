@@ -331,6 +331,24 @@ export function toAgencyData(page: ZapLandingPage): AgencyData {
     };
   }
 
+  /* atlas club (grupo de ofertas no WhatsApp) */
+  const club = section('atlas-club');
+  if (club) {
+    const t = club.ds('textos');
+    out.atlas_club = {
+      etiqueta: str(t.get('etiqueta')),
+      titulo: str(t.get('titulo')),
+      subtitulo: str(t.get('subtitulo')),
+      paragrafos: strList(t.get('paragrafos')),
+      chamada: str(t.get('chamada')),
+      icone: str(t.get('icone')),
+      destaques: items(club.ds('destaques').get('destaques'))
+        .map((it) => ({ icone: str(pick(it, 'icone')), texto: str(pick(it, 'texto')) }))
+        .filter((d) => d.texto),
+      botao: link(club.ds('botao')),
+    };
+  }
+
   /* faq */
   const faq = section('faq');
   if (faq) {

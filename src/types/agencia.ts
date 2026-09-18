@@ -321,6 +321,22 @@ export interface Rodape {
   aviso_demo?: string;
 }
 
+export interface AtlasClubDestaque { icone?: string; texto?: string; }
+
+export interface AtlasClub {
+  etiqueta?: string;
+  titulo?: string;
+  subtitulo?: string;
+  paragrafos?: string[];
+  /** Vantagens exibidas no cartão ao lado do texto. */
+  destaques?: AtlasClubDestaque[];
+  /** Frase de fechamento, antes do botão. */
+  chamada?: string;
+  /** Ícone do cartão (Font Awesome). */
+  icone?: string;
+  botao?: Link;
+}
+
 export interface AgencyData {
   agencia?: Agencia;
   seo?: Seo;
@@ -339,4 +355,6 @@ export interface AgencyData {
   redes_sociais?: RedeSocial[];
   endereco?: Endereco;
   rodape?: Rodape;
+  /** Atlas Club: grupo de ofertas no WhatsApp. */
+  atlas_club?: AtlasClub;
 }
